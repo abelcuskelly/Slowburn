@@ -4,15 +4,100 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/Slowburn/slowburn-logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Meta Tags -->
     <title>Slowburn Wood Co. - Premium Firecraft for Intentional Hosting</title>
-    <meta name="description" content="Premium, naturally-fallen firewood and ritual fire kits for intentional hosting. Clean-burning piñon and juniper blends from high desert drought-fallen wood." />
+    <meta name="description" content="Premium, naturally-fallen firewood and ritual fire kits for intentional hosting. Clean-burning piñon and juniper blends from high desert drought-fallen wood. Sourced only from naturally fallen or standing deadwood." />
+    <meta name="keywords" content="firewood, premium firewood, piñon wood, juniper wood, fire starter, ritual fire, sustainable firewood, high desert wood, clean burning wood, fire hosting, fire craft" />
+    <meta name="author" content="Slowburn Wood Co." />
+    
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Slowburn Wood Co. - Premium Firecraft for Intentional Hosting" />
+    <meta property="og:description" content="Hotter. Cleaner. Wilder. Premium firewood bundles and ritual fire kits sourced from naturally fallen high desert wood." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://abelcuskelly.github.io/Slowburn/" />
+    <meta property="og:image" content="https://abelcuskelly.github.io/Slowburn/slowburn-logo.png" />
+    <meta property="og:site_name" content="Slowburn Wood Co." />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Slowburn Wood Co. - Premium Firecraft" />
+    <meta name="twitter:description" content="Hotter. Cleaner. Wilder. Premium firewood bundles sourced from naturally fallen high desert wood." />
+    <meta name="twitter:image" content="https://abelcuskelly.github.io/Slowburn/slowburn-logo.png" />
+    
+    <!-- Brand Colors for Browser UI -->
+    <meta name="theme-color" content="#2C1810" />
+    <meta name="msapplication-navbutton-color" content="#2C1810" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    
+    <!-- Preload Critical Resources -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/Slowburn/assets/index-Bh4imFdw.js"></script>
+    
+    <!-- Built CSS -->
     <link rel="stylesheet" crossorigin href="/Slowburn/assets/index-DmrK46iq.css">
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Slowburn Wood Co.",
+      "description": "Premium firewood and ritual fire kits for intentional hosting",
+      "url": "https://slowburnwood.com",
+      "logo": "https://abelcuskelly.github.io/Slowburn/slowburn-logo.png",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "California",
+        "addressLocality": "High Desert"
+      },
+      "email": "hello@slowburnwood.com",
+      "slogan": "Hotter. Cleaner. Wilder.",
+      "foundingDate": "2024",
+      "serviceArea": {
+        "@type": "Place",
+        "name": "United States"
+      },
+      "makesOffer": {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Premium Firewood Bundles",
+          "description": "Sustainably sourced firewood from naturally fallen high desert wood"
+        }
+      }
+    }
+    </script>
   </head>
   <body>
+    <!-- Loading Screen -->
+    <div id="loading" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, #2C1810 0%, #4A3426 100%); display: flex; align-items: center; justify-content: center; z-index: 9999; color: #F5E6D3; font-family: 'Playfair Display', serif;">
+      <div style="text-align: center;">
+        <div style="font-size: 3rem; margin-bottom: 1rem;">🔥</div>
+        <h1 style="font-size: 2rem; margin: 0;">Slowburn Wood Co.</h1>
+        <p style="font-style: italic; opacity: 0.8; margin: 0.5rem 0 0 0;">Loading...</p>
+      </div>
+    </div>
+    
+    <!-- Main Application -->
     <div id="root"></div>
+    
+    <!-- Hide loading screen once React loads -->
+    <script>
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          const loading = document.getElementById('loading');
+          if (loading) {
+            loading.style.opacity = '0';
+            loading.style.transition = 'opacity 0.5s ease';
+            setTimeout(() => loading.remove(), 500);
+          }
+        }, 500);
+      });
+    </script>
+    
+    <!-- Built JavaScript -->
+    <script type="module" crossorigin src="/Slowburn/assets/index-Bh4imFdw.js"></script>
   </body>
 </html>
